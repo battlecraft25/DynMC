@@ -80,7 +80,7 @@ public class Main {
 
         this.netServer.setClose(() -> System.out.println("Closed"));
         this.netJsonServer.setClose(() ->  System.out.println("JSON Server closed"));
-        this.netJsonServer.setClose(() ->  System.out.println("Web Data Server closed"));
+        this.webDataServer.setClose(() ->  System.out.println("Web Data Server closed"));
 
         this.netServer.getListenerRegistry().register(new PacketExceptionListener());
 
